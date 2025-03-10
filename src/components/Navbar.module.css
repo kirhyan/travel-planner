@@ -1,0 +1,11 @@
+.navMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  color: var(--title-color);
+  position: relative;
+}

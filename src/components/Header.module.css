@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.scrolled {
+  background-color: rgb(23, 23, 23);
+  transition: 0.5s ease;
+}
