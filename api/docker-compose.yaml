@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./scripts:/scripts
+  # pgadmin:
+  #   image: dpage/pgadmin4
+  #   restart: always
+  #   ports:
+  #     - "8888:80"
+  #   environment:
+  #     PGADMIN_DEFAULT_EMAIL: user-name@domain-name.com
+  #     PGADMIN_DEFAULT_PASSWORD: postgres

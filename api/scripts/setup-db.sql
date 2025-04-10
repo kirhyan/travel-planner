@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS trips (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS waypoints (
+    id SERIAL PRIMARY KEY,
+    trip_id INTEGER REFERENCES trips(id) ON DELETE CASCADE,
+    origin TEXT NOT NULL,
+    destination TEXT NOT NULL,
+    date DATE NOT NULL
+);
