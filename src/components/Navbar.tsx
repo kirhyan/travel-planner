@@ -15,6 +15,11 @@ export default function Navbar() {
           New Trip
         </NavLink>
       </li>
+      <li>
+        <NavLink to="/trips" className={linkClassName}>
+          Trips
+        </NavLink>
+      </li>
     </ul>
   );
 }

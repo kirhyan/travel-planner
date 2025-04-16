@@ -41,3 +41,24 @@ input {
   gap: 0.5rem;
   align-items: center;
 }
+
+.datePicker {
+  background-color: "white";
+  border-radius: "8px";
+}
+
+.error {
+  color: brown;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: -25px;
+  padding-left: 0.5rem;
+}
+
+.errorName {
+  color: brown;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: -8px;
+  padding-left: 0.5rem;
+}
